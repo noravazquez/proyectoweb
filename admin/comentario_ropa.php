@@ -3,7 +3,8 @@
       require_once (__DIR__."/controllers/cliente.php");
       require_once (__DIR__."/controllers/usuario.php");
       include_once(__DIR__."/controllers/sistema.php"); 
-      $sistema->validateRol('Administrador');?>
+      $sistema->validateRol('Administrador');
+      $sistema->validateRol('Gerente');?>
 <!doctype html>
 <html lang="en">
   <head>

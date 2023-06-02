@@ -1,6 +1,7 @@
 <?php require_once (__DIR__."/controllers/proveedor.php");
       include_once(__DIR__."/controllers/sistema.php"); 
-      $sistema->validateRol('Administrador');?>
+      $sistema->validateRol('Administrador');
+      $sistema->validateRol('Gerente');?>
 <!doctype html>
 <html lang="en">
   <head>
