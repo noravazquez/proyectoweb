@@ -1,5 +1,5 @@
 <?php include_once(__DIR__."/controllers/sistema.php"); 
-      $sistema->validateRol('Usuario');
+      $sistema->validateRolUsuario('Usuario');
       include_once(__DIR__."/controllers/pedido.php"); 
       include_once(__DIR__."/controllers/cliente.php"); ?>
 <!DOCTYPE html>

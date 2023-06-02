@@ -2,7 +2,7 @@
       require_once(__DIR__.'/controllers/calzado.php');
       require_once(__DIR__.'/controllers/juguete.php');
       require_once(__DIR__.'/controllers/ropa.php');
-      $sistema->validateRol('Usuario'); ?>
+      $sistema->validateRolUsuario('Usuario');?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

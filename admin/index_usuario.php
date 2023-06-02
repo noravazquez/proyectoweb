@@ -1,5 +1,5 @@
 <?php include_once(__DIR__."/controllers/sistema.php"); 
-      $sistema->validateRol('Usuario');
+      $sistema->validateRolUsuario('Usuario');
       $sistema->db(); ?>
 <!DOCTYPE html>
 <html lang="es">

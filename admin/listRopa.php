@@ -1,5 +1,6 @@
 <?php require_once(__DIR__.'/controllers/sistema.php'); 
-      require_once (__DIR__."/controllers/ropa.php"); ?>
+      require_once (__DIR__."/controllers/ropa.php"); 
+      $sistema->validateRolUsuario('Usuario');?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

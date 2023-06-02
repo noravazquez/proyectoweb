@@ -9,7 +9,7 @@
       require_once (__DIR__."/controllers/detalle_pedido_juguete.php");
       require_once (__DIR__."/controllers/detalle_pedido_ropa.php");
       require_once (__DIR__."/controllers/pago.php");
-      $sistema->validateRol('Usuario'); ?>
+      $sistema->validateRolUsuario('Usuario');?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

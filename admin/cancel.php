@@ -1,5 +1,6 @@
 <?php include_once(__DIR__."/controllers/sistema.php"); 
-      require_once (__DIR__."/controllers/pedido.php"); ?>
+      require_once (__DIR__."/controllers/pedido.php");
+      $sistema->validateRolUsuario('Usuario'); ?>
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
     <div style="background-color: #f8f8f8; padding: 20px; border-radius: 5px; text-align: center;">
         <h2 style="font-size: 24px; color: #333;">Pedido cancelado</h2>

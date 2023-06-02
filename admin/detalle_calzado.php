@@ -3,7 +3,8 @@
       require_once(__DIR__.'/controllers/comentario_calzado.php');
       require_once (__DIR__."/controllers/cliente.php");
       require_once (__DIR__."/controllers/usuario.php");
-      require '../vendor/autoload.php';?> 
+      require '../vendor/autoload.php';
+      $sistema->validateRolUsuario('Usuario');?> 
 <!DOCTYPE html>
 <html lang="es">
 <head>

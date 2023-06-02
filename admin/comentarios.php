@@ -1,5 +1,5 @@
 <?php include_once(__DIR__."/controllers/sistema.php"); 
-      $sistema->validateRol('Usuario');
+      $sistema->validateRolUsuario('Usuario');
       include_once(__DIR__."/controllers/comentario_ropa.php"); 
       include_once(__DIR__."/controllers/comentario_calzado.php"); 
       include_once(__DIR__."/controllers/comentario_juguete.php");

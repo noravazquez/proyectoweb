@@ -133,6 +133,31 @@
             }
         }
 
+        public function validateRolUsuario($rol)
+        {
+            if (isset($_SESSION['validado'])) {
+                if ($_SESSION['validado']) {
+                    if (isset($_SESSION['roles'])) {
+                        // Verificar si el usuario tiene alguno de los roles permitidos
+                        $rolesPermitidos = ['Usuario'];
+                        $rolesUsuario = $_SESSION['roles'];
+
+                        $rolesIntersectados = array_intersect($rolesPermitidos, $rolesUsuario);
+
+                        if (empty($rolesIntersectados)) {
+                            $this->killApp('No tienes el rol adecuado');
+                        }
+                    } else {
+                        $this->killApp('No tienes roles asignados');
+                    }
+                } else {
+                    $this->killApp('No estás validado');
+                }
+            } else {
+                $this->killApp('No te has logueado');
+            }
+        }
+
         public function killApp($mensaje)
         {
             ob_end_clean();

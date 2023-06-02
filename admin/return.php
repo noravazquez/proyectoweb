@@ -1,3 +1,5 @@
+<?php include_once(__DIR__."/controllers/sistema.php"); 
+      $sistema->validateRolUsuario('Usuario'); ?>
 <!DOCTYPE html>
 <html>
 <head>

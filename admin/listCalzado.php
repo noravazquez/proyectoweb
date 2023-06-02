@@ -3,7 +3,8 @@
       require_once (__DIR__."/controllers/categoria_calzado.php");
       require_once (__DIR__."/controllers/marca_calzado.php");
       require_once (__DIR__."/controllers/talla_calzado.php");
-      require_once (__DIR__."/controllers/sucursal.php"); ?>
+      require_once (__DIR__."/controllers/sucursal.php"); 
+      $sistema->validateRolUsuario('Usuario');?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
