@@ -1,0 +1,395 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos de la barra de navegación */
+/* Estilos del navbar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+}
+
+.logout {
+    text-align: right;
+}
+
+.navbar-bottom {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.login a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del banner principal */
+.hero {
+    height: 400px;
+    color: #B6E2D3;
+    background-color: #333; /* Agrega un fondo de color oscuro */
+    text-align: center; /* Centra el contenido verticalmente */
+    padding: 100px 0; /* Aumenta el espacio interno del banner */
+}
+
+.hero p {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+/* Estilos de la sección de productos destacados */
+#destacados {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.producto {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  
+  .producto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .producto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .producto p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #B6E2D3;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #E5F5EF;
+  }  
+
+  .separator {
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+    flex-basis: 33%;
+}
+
+.redes-sociales h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociales li {
+    margin-bottom: 5px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contacto, .about-us {
+    flex-basis: 33%;
+}
+
+.contacto h4, .about-us h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contacto p, .about-us p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+/**/
+#calzado {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 600px; 
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 400px; /* Ajusta el valor según tu preferencia */
+    object-fit: cover;
+}
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%;
+    }
+}
+/**/
+.help-about {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .section-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .faq-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .faq-list li {
+    margin-bottom: 30px;
+  }
+  
+  .question a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .answer p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+/**/
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 25px;
+  }
+  
+  .card-detail {
+    background-color: #FEEDAA;
+    border-radius: 8px;
+    padding: 20px;
+    height: 1000px; 
+    width: 1400px;
+    display: flex;
+  }
+  
+  .col {
+    flex: 1;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    padding: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .product-info {
+    padding-left: 20px;
+  }
+  
+  .product-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    margin-top: 20px;
+  }
+  
+  .detail-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.05);
+  }
+/**/
+.comment {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-info p {
+    margin: 0;
+  }
+  
+  .comment p {
+    margin-bottom: 5px;
+  }  

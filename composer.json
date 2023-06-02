@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "spipu/html2pdf": "^5.2",
+        "phpoffice/phpspreadsheet": "^1.28",
+        "chillerlan/php-qrcode": "^4.3",
+        "endroid/qr-code": "^4.6"
+    }
+}
