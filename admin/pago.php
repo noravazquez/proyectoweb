@@ -1,6 +1,8 @@
 <?php require_once (__DIR__."/controllers/pago.php"); 
       require_once (__DIR__."/controllers/pedido.php");
-      require_once (__DIR__."/controllers/metodo_pago.php"); ?>
+      require_once (__DIR__."/controllers/metodo_pago.php"); 
+      include_once(__DIR__."/controllers/sistema.php"); 
+      $sistema->validateRol('Administrador');?>
 <!doctype html>
 <html lang="en">
   <head>

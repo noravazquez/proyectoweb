@@ -1,5 +1,7 @@
 <?php require_once (__DIR__."/controllers/empleado.php"); 
-      require_once (__DIR__."/controllers/usuario.php");?>
+      require_once (__DIR__."/controllers/usuario.php");
+      include_once(__DIR__."/controllers/sistema.php"); 
+      $sistema->validateRol('Administrador');?>
 <!doctype html>
 <html lang="en">
   <head>

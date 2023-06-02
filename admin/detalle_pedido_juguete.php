@@ -1,6 +1,8 @@
 <?php require_once (__DIR__."/controllers/detalle_pedido_juguete.php"); 
       require_once (__DIR__."/controllers/pedido.php");
-      require_once (__DIR__."/controllers/juguete.php"); ?>
+      require_once (__DIR__."/controllers/juguete.php"); 
+      include_once(__DIR__."/controllers/sistema.php"); 
+      $sistema->validateRol('Administrador');?>
 <!doctype html>
 <html lang="en">
   <head>

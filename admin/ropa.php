@@ -2,7 +2,9 @@
       require_once (__DIR__."/controllers/categoria_ropa.php");
       require_once (__DIR__."/controllers/marca_ropa.php");
       require_once (__DIR__."/controllers/talla_ropa.php");
-      require_once (__DIR__."/controllers/sucursal.php");?>
+      require_once (__DIR__."/controllers/sucursal.php");
+      include_once(__DIR__."/controllers/sistema.php"); 
+      $sistema->validateRol('Administrador');?>
 <!doctype html>
 <html lang="en">
   <head>
