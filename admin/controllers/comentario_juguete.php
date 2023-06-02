@@ -109,6 +109,17 @@
                 throw $e;
             }
         }
+
+        public function getComentarioCliente($idCliente){
+            $this->db();
+            $sql = 'SELECT * FROM comentario_juguete cj LEFT JOIN juguete j ON cj.id_juguete = j.id_juguete LEFT JOIN cliente c ON cj.id_cliente = c.id_cliente LEFT JOIN usuario u ON c.id_usuario = u.id_usuario WHERE cj.id_cliente = :id_cliente';
+            $st = $this->db->prepare($sql);
+            $st->bindParam(':id_cliente', $idCliente, PDO::PARAM_INT);
+            $st->execute();
+            $data = $st->fetchAll(PDO::FETCH_ASSOC);
+
+            return $data;
+        }
 	}
 	$comentario_juguete = new ComentarioJuguete;
 ?>

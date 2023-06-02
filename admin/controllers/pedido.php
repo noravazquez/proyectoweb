@@ -196,6 +196,16 @@
                 throw $e;
             }
         }
+
+        public function getPedidos($idCliente){
+            $this->db();
+            $sql = 'SELECT p.id_pedido, p.fecha_pedido, p.pagado, p.entregado, p.fecha_entrega, p.direccion_entrega, pa.monto, j.juguete, dpj.cantidad as cantidad_juguete, r.ropa, dpr.cantidad as cantidad_ropa, c.calzado, dpc.cantidad as cantidad_calzado FROM pedido p LEFT JOIN cliente cl ON p.id_cliente = cl.id_cliente LEFT JOIN pago pa ON p.id_pedido = pa.id_pedido LEFT JOIN detalle_pedido_juguete dpj ON p.id_pedido = dpj.id_pedido LEFT JOIN juguete j ON dpj.id_juguete = j.id_juguete LEFT JOIN detalle_pedido_ropa dpr ON p.id_pedido = dpr.id_pedido LEFT JOIN ropa r ON dpr.id_ropa = r.id_ropa LEFT JOIN detalle_pedido_calzado dpc ON p.id_pedido = dpc.id_pedido LEFT JOIN calzado c ON dpc.id_calzado = c.id_calzado WHERE p.id_cliente = :id_cliente';
+            $st = $this->db->prepare($sql);
+            $st->bindParam(':id_cliente', $idCliente, PDO::PARAM_INT);
+            $st->execute();
+            $data = $st->fetchAll(PDO::FETCH_ASSOC);
+            return $data;
+        }
     }
 
     $pedido = new Pedido;

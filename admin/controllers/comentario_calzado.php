@@ -110,11 +110,11 @@
             }
         }
 
-        public function getComentarioCliente(){
+        public function getComentarioCliente($idCliente){
             $this->db();
             $sql = 'SELECT * FROM comentario_calzado cc LEFT JOIN calzado ca ON cc.id_calzado = ca.id_calzado LEFT JOIN cliente c ON cc.id_cliente = c.id_cliente LEFT JOIN usuario u ON c.id_usuario = u.id_usuario WHERE cc.id_cliente = :id_cliente';
             $st = $this->db->prepare($sql);
-            $st->bindParam();
+            $st->bindParam(':id_cliente', $idCliente, PDO::PARAM_INT);
             $st->execute();
             $data = $st->fetchAll(PDO::FETCH_ASSOC);
 

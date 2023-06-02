@@ -21,6 +21,7 @@
           <li><a href="listRopa.php">Ropa</a></li>
           <li><a href="listJuguete.php">Juguetes</a></li>
           <li><a href="comentarios.php">Comentarios</a></li>
+          <li><a href="pedidos.php">Mis pedidos</a></li>
           <li><a href="sucursales.php">¿Dónde nos ubicamos?</a></li>
         </ul>
       </div>

@@ -109,6 +109,17 @@
                 throw $e;
             }
         }
+
+        public function getComentarioCliente($idCliente){
+            $this->db();
+            $sql = 'SELECT * FROM comentario_ropa cr LEFT JOIN ropa r ON cr.id_ropa = r.id_ropa LEFT JOIN cliente c ON cr.id_cliente = c.id_cliente LEFT JOIN usuario u ON c.id_usuario = u.id_usuario WHERE cr.id_cliente = :id_cliente';
+            $st = $this->db->prepare($sql);
+            $st->bindParam(':id_cliente', $idCliente, PDO::PARAM_INT);
+            $st->execute();
+            $data = $st->fetchAll(PDO::FETCH_ASSOC);
+
+            return $data;
+        }
 	}
 	$comentario_ropa = new ComentarioRopa;
 ?>
