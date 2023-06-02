@@ -3,7 +3,8 @@
       require_once (__DIR__."/controllers/metodo_pago.php"); 
       include_once(__DIR__."/controllers/sistema.php"); 
       $sistema->validateRol('Administrador');
-      $sistema->validateRol('Gerente');?>
+      $sistema->validateRol('Gerente');
+      $sistema->validateRol('Dependiente');?>
 <!doctype html>
 <html lang="en">
   <head>

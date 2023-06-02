@@ -2,7 +2,8 @@
       require_once (__DIR__."/controllers/rol.php");
       include_once(__DIR__."/controllers/sistema.php"); 
       $sistema->validateRol('Administrador');
-      $sistema->validateRol('Gerente');?>
+      $sistema->validateRol('Gerente');
+      $sistema->validateRol('Dependiente');?>
 <!doctype html>
 <html lang="en">
   <head>
